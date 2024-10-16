@@ -12,7 +12,7 @@ export const Hero = () => {
         fill="white"
       />
       <div className="flex flex-col items-center w-full gap-[3rem] justify-center mt-[20rem]">
-        <div className="py-1 px-3 bg-primary/20 min-w-fit min-h-fit mx-auto border border-primary flex rounded-full item-center justify-center opacity-50 text-gray-200">
+        <div className="py-1 px-3 bg-primary/55 dark:bg-primary/20 min-w-fit min-h-fit mx-auto border border-primary flex rounded-full item-center justify-center opacity-50 text-gray-200">
           <span>⌘J to open command</span>
         </div>
         <div className="relative flex items-center w-full gap-[12rem] justify-between">
