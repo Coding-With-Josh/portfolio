@@ -12,6 +12,7 @@ import { FloatingDock } from "../ui/floating-dock";
 import { MessageCircle, NotebookPen, PanelsTopLeft } from "lucide-react";
 import { IconBrandX } from "@tabler/icons-react";
 import { ModeToggleIcon } from "../ui/mode-toggler";
+import { isExternal } from "util/types";
 
 export const Navbar = () => {
   const links = [
@@ -55,6 +56,7 @@ export const Navbar = () => {
         <IconBrandX className="h-full w-full text-gray-500 dark:text-gray-400" />
       ),
       href: "https://x.com/josh_scriptz",
+      isExternal: true,
     },
     {
       title: "GitHub",
@@ -62,6 +64,7 @@ export const Navbar = () => {
         <IconBrandGithub className="h-full w-full text-gray-500 dark:text-gray-400" />
       ),
       href: "https://github.com/Coding-With-Josh",
+      isExternal: true,
     },
     {
       title: "Theme",
@@ -72,7 +75,6 @@ export const Navbar = () => {
   return (
     <div className="absolute z-[5000] backdrop-blur-md flex items-center justify-center bottom-[3rem] w-full mx-auto">
       <FloatingDock
-        mobileClassName="translate-y-20" // only for demo, remove for production
         items={links}
       />
     </div>

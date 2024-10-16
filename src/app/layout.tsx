@@ -34,7 +34,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <CommandDialogDemo/>
-          <Navbar/>
+          {/* <Navbar/> */}
           {children}
         </ThemeProvider>
       </body>

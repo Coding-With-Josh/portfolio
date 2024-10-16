@@ -118,11 +118,13 @@ function IconContainer({
   title,
   icon,
   href,
+  isExternal
 }: {
   mouseX: MotionValue;
   title: string;
   icon: React.ReactNode;
   href: string;
+  isExternal?: boolean;
 }) {
   let ref = useRef<HTMLDivElement>(null);
 
@@ -167,7 +169,7 @@ function IconContainer({
   const [hovered, setHovered] = useState(false);
 
   return (
-    <Link href={href}>
+    <Link href={href} target={isExternal ? "_blank" : undefined} rel={isExternal ? "noopener noreferrer" : undefined}>
       <motion.div
         ref={ref}
         style={{ width, height }}

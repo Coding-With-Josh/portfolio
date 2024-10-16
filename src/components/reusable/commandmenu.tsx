@@ -20,6 +20,9 @@ import {
   CommandSeparator,
   CommandShortcut,
 } from "@/components/ui/command"
+import Link from "next/link"
+import { Mail, NotebookPen, PhoneCall } from "lucide-react"
+import { IconBrandGithub, IconBrandX } from "@tabler/icons-react"
 
 export function CommandDialogDemo() {
   const [open, setOpen] = React.useState(false)
@@ -50,34 +53,34 @@ export function CommandDialogDemo() {
           <CommandEmpty>No results found.</CommandEmpty>
           <CommandGroup heading="Suggestions">
             <CommandItem>
-              <CalendarIcon className="mr-2 h-4 w-4" />
-              <span>Calendar</span>
+              <PhoneCall className="mr-2 h-4 w-4" />
+              <span>(+234) 810 7198 205</span>
             </CommandItem>
             <CommandItem>
-              <FaceIcon className="mr-2 h-4 w-4" />
-              <span>Search Emoji</span>
+              <NotebookPen className="mr-2 h-4 w-4" />
+              <span>Blog</span>
             </CommandItem>
             <CommandItem>
               <RocketIcon className="mr-2 h-4 w-4" />
-              <span>Launch</span>
+              <span>Hire Me</span>
             </CommandItem>
           </CommandGroup>
           <CommandSeparator />
-          <CommandGroup heading="Settings">
+          <CommandGroup heading="Socials">
             <CommandItem>
-              <PersonIcon className="mr-2 h-4 w-4" />
-              <span>Profile</span>
-              <CommandShortcut>⌘P</CommandShortcut>
+              <IconBrandX className="mr-2 h-4 w-4" />
+              <Link href="https://x.com/josh_scriptz">X</Link>
+              <CommandShortcut>⌘X</CommandShortcut>
             </CommandItem>
             <CommandItem>
-              <EnvelopeClosedIcon className="mr-2 h-4 w-4" />
-              <span>Mail</span>
-              <CommandShortcut>⌘B</CommandShortcut>
+              <IconBrandGithub className="mr-2 h-4 w-4" />
+              <Link href="https://github.com/Coding-With-Josh">Github</Link>
+              <CommandShortcut>⌘G</CommandShortcut>
             </CommandItem>
             <CommandItem>
-              <GearIcon className="mr-2 h-4 w-4" />
-              <span>Settings</span>
-              <CommandShortcut>⌘S</CommandShortcut>
+              <Mail className="mr-2 h-4 w-4" />
+              <Link href="codewithjoshh@gmail.com">Mail</Link>
+              <CommandShortcut>⌘M</CommandShortcut>
             </CommandItem>
           </CommandGroup>
         </CommandList>
