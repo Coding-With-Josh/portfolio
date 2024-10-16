@@ -15,7 +15,7 @@ export const Hero = () => {
         <div className="py-1 px-3 bg-primary/55 dark:bg-primary/20 min-w-fit min-h-fit mx-auto border border-primary flex rounded-full item-center justify-center opacity-50 text-gray-200">
           <span>⌘J to open command</span>
         </div>
-        <div className="relative flex items-center w-full gap-[12rem] justify-between">
+        <div className="relative flex flex-col items-center w-full gap-[3rem] justify-center lg:flex-row md:flex-row lg:gap-[12rem] xl:gap-[2rem] lg:justify-between">
           <div className="absolute z-0 w-[13rem] h-[13rem] border rounded-full bg-primary blur-[7rem]" />
           <div className="">
             <h2 className="heading">Hi there👋</h2>
