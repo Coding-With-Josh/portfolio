@@ -2,6 +2,7 @@ import { Hero } from "@/components/sections/Hero";
 import { Navbar } from "@/components/sections/Navbar";
 import {Journey} from "@/components/sections/Journey"
 import Image from "next/image";
+import { ArrowBigDownDash } from "lucide-react";
 
 export default function Home() {
   return (
@@ -12,6 +13,10 @@ export default function Home() {
         <Hero />
         <Journey/>
       {/* </div> */}
+      <div>
+        <ArrowBigDownDash/>
+        <h2>Arrroww</h2>
+      </div>
     </div>
   );
 }

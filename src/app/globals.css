@@ -118,4 +118,5 @@ body {
   .flex-col-all-end {
     @apply flex flex-col items-start justify-end;
   }
+  
 }

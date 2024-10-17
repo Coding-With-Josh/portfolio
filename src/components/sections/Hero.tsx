@@ -22,7 +22,7 @@ export const Hero = () => {
           <div className="">
             <h2 className="heading mb-3">Hi there👋</h2>
             <h2 className="subheading font-normal mb-[2.5rem]">
-              I'm <Link href="https://google.com/joshua+idele" className="font-bold text-primary">Joshua Idele</Link>, a Software, Blockchain Developer currently residing in Nigeria.
+              I'm <Link href="https://google.com/joshua+idele" className="font-bold text-primary hover:underline underline-offset-2">Joshua Idele</Link>, a Software, Blockchain Developer currently residing in Nigeria.
               <br /> I major in developement of websites, webapps, mobile and desktop applications and Smart Contracts
             </h2>
             <Button>Get in touch</Button>
