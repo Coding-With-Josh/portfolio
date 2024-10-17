@@ -4,6 +4,7 @@ import React from "react";
 import { Spotlight } from "../ui/spotlight";
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "../ui/button";
 
 export const Hero = () => {
   return (
@@ -20,10 +21,11 @@ export const Hero = () => {
           {/* <div className="absolute z-0 w-[13rem] h-[13rem] border rounded-full bg-primary blur-[7rem]" /> */}
           <div className="">
             <h2 className="heading mb-3">Hi there👋</h2>
-            <h2 className="subheading font-normal">
+            <h2 className="subheading font-normal mb-[2.5rem]">
               I'm <Link href="https://google.com/joshua+idele" className="font-bold text-primary">Joshua Idele</Link>, a Software, Blockchain Developer currently residing in Nigeria.
               <br /> I major in developement of websites, webapps, mobile and desktop applications and Smart Contracts
             </h2>
+            <Button>Get in touch</Button>
           </div>
           <div className="relative w-[13rem] h-[13rem] border rounded-full bg-primary/70">
             {/* <div className="absolute z-0 w-[13rem] h-[13rem] border rounded-full bg-primary blur-[7rem]"/> */}

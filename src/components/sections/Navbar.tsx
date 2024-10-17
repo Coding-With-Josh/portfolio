@@ -73,10 +73,17 @@ export const Navbar = () => {
     },
   ];
   return (
-    <div className="absolute z-[5000] backdrop-blur-md flex items-center justify-center bottom-[3rem] w-full mx-auto">
-      <FloatingDock
-        items={links}
-      />
-    </div>
+    <>
+      <div className=" hidden fixed z-[5000] lg:flex md:flex items-center justify-center bottom-[3rem] w-full mx-auto">
+        <div className="flex items-center justify-center">
+          <FloatingDock items={links} />
+        </div>
+      </div>
+      <div className="lg:hidden md:hidden fixed z-[5000] flex items-center justify-center right-[1.2rem] bottom-[1.2rem]">
+        <div className="flex items-center justify-center">
+          <FloatingDock items={links} />
+        </div>
+      </div>
+    </>
   );
 };
