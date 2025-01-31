@@ -33,8 +33,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <CommandDialogDemo/>
-          <Navbar/>
+          {/* <CommandDialogDemo/> */}
+          {/* <Navbar/> */}
           {children}
         </ThemeProvider>
       </body>
