@@ -16,7 +16,7 @@ export function Hero() {
           Full Stack Developer
         </h1>
         <TypewriterEffect 
-          words={["Web3 Development", "Mobile Apps", "Cloud Solutions"]} 
+          words={["Web3 Development", "Mobile Apps", "Cloud Solutions", "Blockchain"]} 
           className="text-2xl md:text-3xl text-gray-300"
         />
       </motion.div>
